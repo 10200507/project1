@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+*{
+   font-family : 'Nanum Gothic';
+}
+html, body{   margin:0; padding:0; height:100%;}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nanum Gothic';
+}
+
+ul {
+	list-style: none;
+}
+
+#header {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #A9A8C0;
+}
+
+.header1 {
+	width: 100%;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #78779c;
+}
+
+.header1>nav {
+	width: 600px;
+	height: 100%;
+}
+
+.header1 ul {
+	color: #ffffff;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header1 ul>li {
+	font-size: 10px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	margin-right: 100px;
+}
+
+.header1 ul>li a {
+	color: white;
+	text-decoration: none;
+	outline: none;
+}
+
+.header2 {
+	width: 100%;
+	height: 200px;
+}
+
+.header2 table {
+	text-align: center;
+	width: 100%;
+	margin-left: auto;
+	margin-top:30px;
+}
+
+.header3{
+	background-color:#CDCCDA;
+	height : 50px;
+}
+.header3 ul{
+	text-align:right;
+}
+
+.header3 ul li{
+	display : inline-block;
+	list-style-type : none;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:15px;
+	font-size : 15px;
+}
+
+.header3 ul>li a {
+	color: #000000;
+	text-decoration: none;
+	outline: none;
+}
+
+#section{
+	padding-top : 70px;
+	padding-bottom : 150px;
+}
+
+
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+.inner_login {
+    float : center;
+}
+.login_1{
+        position: relative;
+        width: 320px;
+        margin: 0 auto;
+    }
+.screen_out {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    line-height: 0;
+    text-indent: -9999px;    
+}
+body, button, input, select, td, textarea, th {
+    font-size: 13px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}    
+fieldset, img {
+    border: 0;
+}
+.login_1 .box_login {
+    margin: 35px 0 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.login_1 .inp_text {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 18px 19px 19px;
+    box-sizing: border-box;
+}
+.login_1 .inp_text+.inp_text {
+    border-top: 1px solid #ddd;
+}
+.inp_text input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    color: #000;
+    border: none;
+    outline: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+}
+.btn_click {
+    margin: 20px 0 0;
+    width: 100%;
+    height: 48px;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #78779c;
+}
+.login_append {
+    overflow: hidden;
+    padding: 15px 0 0;
+}
+.inp_chk {
+    display: inline-block;
+    position: relative;
+    margin-bottom: -1px;
+}
+.login_append .inp_chk {
+    float: left;
+}
+.inp_chk .inp_radio {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 0;
+}
+.inp_chk .lab_g {
+    display: inline-block;
+    margin-right: 19px;
+    color: #909090;
+    font-size: 13px;
+    line-height: 19px;
+    vertical-align: top;
+}
+.inp_chk .ico_check {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 1px 4px 0 0;
+    background-position: -60px 0;
+    color: #333;
+}
+.inp_chk .txt_lab {
+    vertical-align: top;
+}
+.login_append .txt_find {
+    float: right;
+    color: #777;
+}
+
+#footer{
+	width:100%;
+	height:60px;
+	margin: 0 auto;
+}
+
+#footer ul li {
+	display : inline-block;
+	list-style-type : none;
+	padding : 0px 15px; /* top=bottom=0, left=right=15px */
+}
+
+.footer1 {
+	width : 100%;
+	height : 30px;
+    display: block;
+    background: #A9A8C0;
+}
+
+.footer1 ul{
+	width : 100%;
+	height : 100%;
+	display: flex;
+}
+
+.footer1 ul>li{
+	font-size : 13px;
+	height:100%;
+	display:flex;
+	align-items:center;
+	margin-left : 20px;	
+	margin-top : 5px;
+}
+
+.footer1 ul>li a {
+	color: black;
+	text-decoration: none;
+	outline: none;
+}
+
+.footer2 {
+    display: block;
+    height : 30px;
+    background: #78779c;
+}
+
+.footer2 ul>li{
+	color : white;
+	font-size : 13px;
+	height:100%;
+	display:flex;
+	align-items:center;
+	margin-left : 20px;	
+	margin-top : 5px;
+}
+
+.footer2 ul>li a {
+	color: white;
+	text-decoration: none;
+	outline: none;
+}
+
+</style>
+</head>
+<body>
+	<div id="header">
+		<div class="header1">
+			<h2></h2>
+			<nav>
+				<ul>
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="join.html">회원가입</a></li>
+					<!-- 	<li><a href="main.html">로그아웃</a></li> <!-- 로그인시 출력처리(미구현) -->
+					<!-- 	<li><a href="mypage_main.html">마이페이지</a></li> <!-- 로그인시 출력처리(미구현) -->
+					<li><a href="cart.html">장바구니</a></li>
+					<li><a href="notice.html">공지사항</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header2">
+			<table align="center">
+				<tr><td>
+					<a href="main.html"> <img src="LOGO.png" width="100"
+						height="100"></a>
+				</td></tr>
+				<tr><td style="padding-top:20px;">
+					<input type="search" id="search_form" placeholder="검색어를 입력하세요."
+						style="width: 300px; height: 30px; font-size :12px;"><button style="height: 30px; width : 50px; font-size:12px;">검색</button>
+				</td></tr>
+			</table>
+		</div>
+		<div class="header3">
+			<ul style="text-align:center;">
+				<li><a href="product_list.html">강아지 주식</a></li>
+				<li><a href="#dod_cate_2">강아지 간식</a></li>
+				<li><a href="#dod_cate_3">강아지 용품</a></li>
+			</ul>
+		</div>
+	</div>
+<div id="section">
+<br>
+<h1 align="center">로그인</h1>
+<div class="inner_login">
+    <div class="login_1">
+
+		<!--<form method="post" id="authForm" action="https://www.tistory.com/auth/login">  -->
+        
+        <form method="post" id="authForm">
+            <!--            <input type="hidden" name="redirectUrl" value="https://blogpack.tistory.com/manage">
+              -->
+            <fieldset>
+            <legend class="screen_out">로그인 정보 입력폼</legend>
+            <div class="box_login">
+                <div class="inp_text">
+                <label for="loginId" class="screen_out">아이디</label>
+                <input type="email" id="loginId" name="loginId" placeholder="ID" >
+                </div>
+                <div class="inp_text">
+                <label for="loginPw" class="screen_out">비밀번호</label>
+                <input type="password" id="loginPw" name="password" placeholder="Password" >
+                </div>
+            </div>
+            <button type="button" class="btn_click" onclick="location.href='http://www.naver.com' ">로그인</button>
+            <!-- 일단 네이버로 달아놓음 -->
+            <button type="button" class="btn_click">회원가입</button>
+            <div class="login_append">
+                <div class="inp_chk"> <!-- 체크시 checked 추가 -->
+                <input type="checkbox" id="keepLogin" class="inp_radio"  name="keepLogin">
+                <label for="keepLogin" class="lab_g">
+        <span class="img_top ico_check"></span>
+        <span class="txt_lab">로그인 상태 유지</span>
+        </label>
+                </div>
+                <span class="txt_find">
+                <a href="#" class="link_find">아이디</a>
+                    | 
+                <a href="#" class="link_find">비밀번호 찾기</a>
+                </span>
+            </div>
+            
+            </fieldset>
+        </form>
+        
+    </div>
+</div>
+</div>
+<div id="footer">
+	<div class="footer1">
+		<ul>
+			<li><a href="tos.html">이용약관</a></li>
+			<li><a href="pp.html">개인정보처리방침</a></li>
+			<li><a href="center.html">고객센터</a></li>
+		</ul>
+	</div>
+	<div class="footer2">
+		<ul>
+			<li>상호 : 주식회사</li>
+			<li>주소 : 00시00구00로</li>
+			<li>대표 : 홍길동</li>
+			<li>전화번호 : 00-0000-0000</li>
+			<li>팩스번호 : 01-0000-0000</li>
+			<li>문의메일 : <a href="mailto:﻿"abc@gmail.com">abc@gmail.com</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
